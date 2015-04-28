@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" href="firstpage/as.css" type="text/css">
+
+
+<!--
+    <script type="text/javascript" src="script/ASPlot.js"></script>
+-->
+
+</head>
+
+<body>
+<div id="runPart">
+
+
+<?php
+	
+	$id=$_POST["eventId"];
+	$output = array();
+
+	echo  getcwd();
+	//exec('/usr/java/jdk1.7.0_51/bin/java -version 2>&1', $output);
+	//print_r($output); 
+
+
+	echo '<p id="eventId">'.$id.'</p>';
+	echo "/usr/java/jdk1.7.0_51/bin/java -jar /home/limeng/software/alternativeEngine/getxml.jar ".$id." /home/limeng/software/alternativeEngine/Configure.txt 2>&1";
+	exec("/usr/java/jdk1.7.0_51/bin/java -jar /home/limeng/software/alternativeEngine/getxml.jar ".$id." /home/limeng/software/alternativeEngine/Configure.txt 2>&1",$output);
+
+	print_r($output); 
+	
+	//sleep(60);
+
+?>
+
+</div>
+<!-- the title part-->
+<h2>Alternative splicing browser<a id="help" href="http://www.baidu.com">help</a></h2>
+	<hr></hr>
+	<img src="firstpage/xx.jpg" name="leftPanelButton" width="20" height="20" border="0" alt="javascript button" onClick="return leftPanelExpand();" onMouseEnter="return leftPanelButtonOver();">expand the left control panel
+	
+
+	<div id="leftPanelControl" onMouseLeave="return leftPanelButtonOut();">
+		<div id="leftPanelControlGene">gene|
+<!--
+			<input type="checkbox" name="GenePart-coordinate" value="coordinate">coordinate
+			<input type="checkbox" name="GenePart-nucliedAcid" value="nucliedAcid">nucliedAcid
+-->
+		</div><br>
+		<div id="leftPanelControlProtein1">protein
+<!--
+			<input type="checkbox" name="coordinate" value="nucliedAcid">coordinate
+			<input type="checkbox" name="amino acid" value="nucliedAcid">amino acid		
+			<input type="checkbox" name="exons" value="nucliedAcid">exons		
+			<input type="checkbox" name="pfams" value="nucliedAcid">pfams
+			<input type="checkbox" name="disprot" value="nucliedAcid">disprot
+-->
+		</div><br>
+		
+		
+		
+		
+	</div>
+	
+	
+	<div id="mainPage">
+		<div id="geneVisualModule">
+			<canvas id="geneVisual" width="900" height="200">
+		
+		</div>
+		<p></p><p></p>
+		<hr></hr><hr></hr>
+		<div id="proteinVisualModule1">
+			<canvas id="proteinVisual1" width="900" height="500">
+
+
+
+			
+		</div>
+		<p></p><hr></hr><hr></hr>
+		<div id="transcriptsVisualModule">
+			<canvas id="transcriptsVisual" width="900" height="1000">
+		
+		</div>		
+		
+		
+		
+			
+	</div>
+	<hr></hr>
+	
+	
+    <script type="text/javascript" src="firstpage/ASPlot.js"></script>
+</body>
+
+
+</html>
+
+
+
+

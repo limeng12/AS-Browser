@@ -1,0 +1,38 @@
+#this file is the configure file,so be carefull when changing its content
+#fasta files directory,all the files below must be index porperly with samtools-faidx
+FastaFilesPath	/home/limeng/data/hg19/fasta/
+#
+annoPath	/home/limeng/data/hg19/gtf/
+#Use this option will make get nuclied sequence online,not very stableF
+conservationPath	/home/limeng/data/hg19/conservation/
+FetchSeqOnline	FALSE
+#VSL2's path,note including its filename
+VSL2Path	/home/limeng/software/VSL2B/
+#
+#VSL2 Name
+VSL2Name	VSL2.jar
+#
+#Use this option to allow run VSL2 online,not very stable,one day 100times
+UseVSL2Server	TRUE
+#
+mcr	/home/limeng/clinic-report/software/modpred/mcr/mcr/v713
+#modpred's path,note including its filename
+ModPredPath	/home/limeng/clinic-report/software/modpred/ModPred_linux64/
+#
+#modepred's exe name
+ModPredPathName	run_ModPred_linux64.sh
+#pfamScanPath
+pfamScan	/home/limeng/software/pfam/PfamScan/
+#pfamAPath
+pfamA	/home/limeng/software/pfam/pfamA/
+#javaPath
+java	/usr/java/jdk1.7.0_51/bin/
+#mysql host
+mysqlHost	127.0.0.1
+#mysql userName
+mysqlUser	limeng
+#mysql password
+mysqlPassword		
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" href="firstpage/as.css" type="text/css">
+<!--
+    <script type="text/javascript" src="script/ASPlot.js"></script>
+-->
+
+</head>
+
+<body>
+<!-- the title part-->
+<h2>Alternative splicing browser<a id="help" href="http://www.baidu.com">help</a></h2>
+
+<!---->
+<div id="inputModule">
+<form>
+<p id="serachTitle">Please input your alternative exons</p>
+
+<input type="text" id="searchFild"/>
+<p>Example1: @chr17:7572927:7573008:@chr17:7573927:7574033:-:Splice@chr17:7576853:7576926:-@chr17:7577019:7577155:-:Splice@chr17:7577499:7577608:-@chr17:7578177:7578289:-@chr17:7578371:7578544:-@chr17:7579312:7579590:-@chr17:7579700:7579721:-@chr17:7579839:7579912:-</p>
+
+<p>Example2:ENST00000413465@2:3</p>
+
+
+</form>
+</div>
+<div id="visualASModule">
+<canvas id="visualAS">
+
+</div>
+<p></p>
+<div id="exonsModule">
+<canvas id="visualTranscripts">
+
+</div>
+
+
+
+</body>
+
+
+</html>

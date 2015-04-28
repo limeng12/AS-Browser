@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/biojava"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ghost4j"/>
+	<classpathentry kind="lib" path="/home/limeng/Downloads/mysql-connector-java-5.1.31/mysql-connector-java-5.1.31-bin.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/picardall"/>
+	<classpathentry kind="lib" path="/home/limeng/workspace/lib/picard-tools-1.99/picard-tools-1.99/apache-ant-1.8.2-bzip2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
