@@ -2,4 +2,4 @@
 
 Here it is:
 
-http://www.menghrbeu.com/browserhome/visualPage.php
+http://www.menghrbeu.com/browserhome/LoadingPage.php
